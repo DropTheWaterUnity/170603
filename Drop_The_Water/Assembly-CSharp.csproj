@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{63D2870F-9C59-4CD2-F63D-E13AAFF04180}</ProjectGuid>
+    <ProjectGuid>{197EF040-9C5E-9B15-8A7F-764790D1C6A8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,6 +57,7 @@
      <Compile Include="Assets\Resources\Scripts\hintbtnClicked.cs" />
      <Compile Include="Assets\Resources\Scripts\robot\robotFloat.cs" />
      <Compile Include="Assets\Resources\Scripts\toNextPage.cs" />
+     <Compile Include="Assets\Resources\Scripts\tutorialClicked.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

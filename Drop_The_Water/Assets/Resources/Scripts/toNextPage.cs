@@ -31,4 +31,17 @@ public class toNextPage : MonoBehaviour {
 		Debug.Log(previousScene);
 		SceneManager.LoadScene(i);
 	}
+
+	public void GotoTutorial() {
+		previousScene = SceneManager.GetActiveScene().buildIndex;
+
+		string str = PlayerPrefs.GetString("tutorial", "true");
+		bool isActive = System.Convert.ToBoolean(str);
+
+		if(isActive)
+			SceneManager.LoadScene(2);
+		else
+			SceneManager.LoadScene(4);
+
+	}
 }
