@@ -50,14 +50,14 @@
      <Compile Include="Assets\Resources\Scripts\MainPage\Instruction.cs" />
      <Compile Include="Assets\Resources\Scripts\MainPage\Instructions.cs" />
      <Compile Include="Assets\Resources\Scripts\MainPage\Number.cs" />
+     <Compile Include="Assets\Resources\Scripts\SettingPage\tutorialClicked.cs" />
      <Compile Include="Assets\Resources\Scripts\StartPage\BackgroundScroller.cs" />
-     <Compile Include="Assets\Resources\Scripts\StartPage\GclefMove.cs" />
      <Compile Include="Assets\Resources\Scripts\StartPage\StartWaterDrop.cs" />
      <Compile Include="Assets\Resources\Scripts\cupaction\cupChange.cs" />
+     <Compile Include="Assets\Resources\Scripts\floatObject.cs" />
      <Compile Include="Assets\Resources\Scripts\hintbtnClicked.cs" />
-     <Compile Include="Assets\Resources\Scripts\robot\robotFloat.cs" />
+     <Compile Include="Assets\Resources\Scripts\toHelpPage.cs" />
      <Compile Include="Assets\Resources\Scripts\toNextPage.cs" />
-     <Compile Include="Assets\Resources\Scripts\tutorialClicked.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

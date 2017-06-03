@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 public class toNextPage : MonoBehaviour {
 
     public static int previousScene = 0;
-	
+	public static int settingBack = 0;
+
 	// go to next scene (except start->ready and setting scene)
-	public void GotoNext() {
+	public virtual void GotoNext() {
 		previousScene = SceneManager.GetActiveScene().buildIndex;
 		int nextScene = previousScene + 1;
-		
+
 		if(nextScene<18){
 			SceneManager.LoadScene(nextScene);
 		}
@@ -20,18 +21,22 @@ public class toNextPage : MonoBehaviour {
 	}
 
 	// go to previous scene
-	public void GoBack() {
+	public virtual void GoBack() {
 		Debug.Log(previousScene);
 		SceneManager.LoadScene(previousScene);
 	}
 	
 	// go to specific scene
-	public void GotoScene(int i) {
+	public virtual void GotoScene(int i) {
 		previousScene = SceneManager.GetActiveScene().buildIndex;
 		Debug.Log(previousScene);
 		SceneManager.LoadScene(i);
+
+		if (i == 1 || i == 16)
+			settingBack = previousScene;
 	}
 
+	// go to tutorial by tutorial on/off
 	public void GotoTutorial() {
 		previousScene = SceneManager.GetActiveScene().buildIndex;
 
@@ -42,6 +47,5 @@ public class toNextPage : MonoBehaviour {
 			SceneManager.LoadScene(2);
 		else
 			SceneManager.LoadScene(4);
-
 	}
 }
