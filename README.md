@@ -1,3 +1,3 @@
-# 170601
+# 170603
 
-hint, tutorial button 수정함
+help 넘어가는 거 끝!
