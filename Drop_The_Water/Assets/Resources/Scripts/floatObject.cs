@@ -9,6 +9,7 @@ public class floatObject : MonoBehaviour {
 	Vector3 beforePosition;
 	// Use this for initialization
 	void Start () {
+		// Object's original position
 		beforePosition = transform.position;
 	}
 	

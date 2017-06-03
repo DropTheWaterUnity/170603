@@ -8,7 +8,7 @@ public class toNextPage : MonoBehaviour {
     public static int previousScene = 0;
 	public static int settingBack = 0;
 
-	// go to next scene (except start->ready and setting scene)
+	// go to next scene
 	public virtual void GotoNext() {
 		previousScene = SceneManager.GetActiveScene().buildIndex;
 		int nextScene = previousScene + 1;

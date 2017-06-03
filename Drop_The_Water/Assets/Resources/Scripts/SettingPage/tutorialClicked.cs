@@ -20,6 +20,7 @@ public class tutorialClicked : MonoBehaviour {
 			tutorialToggle.isOn = false;
 	}
 	
+	// tutorial button changed event
 	public void tutorialChanged() {
 		tutorialOnOff = tutorialToggle.isOn;
 
